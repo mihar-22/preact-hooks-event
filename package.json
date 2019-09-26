@@ -34,13 +34,13 @@
     "toc": "doctoc README.md",
     "lint": "standard --parser babel-eslint --fix --env jest",
     "build": "microbundle src/index.js --sourcemap false --compress",
+    "clean": "rimraf dist",
     "test": "jest src/__tests__",
     "test:watch": "yarn test --watch",
     "test:update": "yarn test --updateSnapshot --coverage",
     "setup": "yarn && yarn validate",
-    "validate": "yarn lint && yarn test && yarn build",
-    "prepublishOnly": "yarn validate",
-    "release": "standard-version"
+    "validate": "yarn lint && yarn test && yarn clean && yarn build",
+    "release": "yarn validate && standard-version"
   },
   "peerDependencies": {
     "preact": ">=10 || ^10.0.0-alpha.0 || ^10.0.0-beta.0"
