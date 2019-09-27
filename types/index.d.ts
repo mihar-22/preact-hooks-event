@@ -1,3 +1,7 @@
+// Type definitions for Preact Hooks - Event
+// Project: https://github.com/mihar-22/preact-hooks-event
+// Definitions by: Rahim Alwer <https://github.com/mihar-22>
+
 import { JSXInternal } from "preact/src/jsx";
 import EventHandler = JSXInternal.EventHandler;
 
