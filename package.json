@@ -1,6 +1,6 @@
 {
   "name": "@preact-hooks/event",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A custom Preact Hook that provides a declarative useEventListener.",
   "main": "dist/event.js",
   "module": "dist/event.mjs",
