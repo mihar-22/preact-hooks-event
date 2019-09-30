@@ -1,7 +1,7 @@
 /** @jsx h */
 
 import { h } from 'preact'
-import { render } from 'preact-testing-library-next'
+import { render } from '@testing-library/preact'
 
 import useEventListener from '..'
 
