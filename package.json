@@ -2,9 +2,9 @@
   "name": "@preact-hooks/event",
   "version": "1.0.3",
   "description": "A custom Preact Hook that provides a declarative useEventListener.",
-  "main": "dist/event.js",
-  "module": "dist/event.mjs",
-  "browser": "dist/event.umd.js",
+  "main": "dist/hook.js",
+  "module": "dist/hook.mjs",
+  "unpkg": "dist/hook.umd.js",
   "types": "types/index.d.ts",
   "license": "MIT",
   "author": "Rahim Alwer <rahim_alwer@hotmail.com>",
@@ -33,7 +33,7 @@
   "scripts": {
     "toc": "doctoc README.md",
     "lint": "standard --parser babel-eslint --fix --env jest",
-    "build": "microbundle src/index.js --name useEventListener --sourcemap false --compress",
+    "build": "microbundle src/index.js --name useEventListener --sourcemap false --compress --globals preact/hooks=preactHooks",
     "clean": "rimraf dist",
     "test": "jest src/__tests__",
     "test:watch": "yarn test --watch",
@@ -64,12 +64,6 @@
   },
   "mangle": {
     "regex": "^_"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "^react$": "preact/compat",
-      "^react-dom$": "preact/compat"
-    }
   },
   "publishConfig": {
     "access": "public"
