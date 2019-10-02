@@ -29,6 +29,12 @@ A custom Preact Hook that provides a declarative useEventListener.
 
 `npm install @preact-hooks/event --save-dev` or `yarn add @preact-hooks/event -D`
 
+You can also load it via the [unpkg](https://unpkg.com) CDN
+
+`https://unpkg.com/@preact-hooks/event` will download the latest UMD bundle.
+
+All formats (UMD, CJS and ESM) are available in the dist folder inside the package.
+
 ## Docs
 
 For usage and examples see [donovan/use-event-listener](https://github.com/donavon/use-event-listener#usage).
