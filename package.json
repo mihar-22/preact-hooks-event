@@ -2,8 +2,8 @@
   "name": "@preact-hooks/event",
   "version": "1.0.6",
   "description": "A custom Preact Hook that provides a declarative useEventListener.",
-  "main": "dist/hook.js",
-  "module": "dist/hook.esm.js",
+  "main": "dist/hook.umd.js",
+  "module": "dist/hook.modern.js",
   "unpkg": "dist/hook.umd.js",
   "types": "types/index.d.ts",
   "license": "MIT",
@@ -38,7 +38,7 @@
   "scripts": {
     "toc": "doctoc README.md",
     "lint": "standard --parser babel-eslint --fix --env jest",
-    "build": "microbundle src/index.js --name useEventListener --sourcemap false --compress --globals preact/hooks=preactHooks",
+    "build": "microbundle src/index.js --name useEventListener --sourcemap false --compress --globals preact/hooks=preactHooks -f modern,umd",
     "clean": "rimraf dist",
     "test": "jest src/__tests__",
     "test:watch": "yarn test --watch",
@@ -61,14 +61,11 @@
     "babel-jest": "^24.9.0",
     "doctoc": "^1.4.0",
     "jest": "^24.9.0",
-    "microbundle": "^0.11.0",
+    "microbundle": "^0.12.0-next.6",
     "preact": "^10.0.0-rc.3",
     "rimraf": "^3.0.0",
     "standard": "^14.3.1",
     "standard-version": "^7.0.0"
-  },
-  "mangle": {
-    "regex": "^_"
   },
   "publishConfig": {
     "access": "public"
