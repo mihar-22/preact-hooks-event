@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/mihar-22/preact-hooks-event/compare/v1.0.4...v1.0.5) (2019-10-02)
+
+
+### Bug Fixes
+
+* **build:** switch from mjs to esm extension and add browserslist ([951cc00](https://github.com/mihar-22/preact-hooks-event/commit/951cc00))
+
 ### [1.0.4](https://github.com/mihar-22/preact-hooks-event/compare/v1.0.3...v1.0.4) (2019-10-02)
 
 
