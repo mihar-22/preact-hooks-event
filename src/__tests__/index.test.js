@@ -5,7 +5,7 @@ import { render } from '@testing-library/preact'
 
 import useEventListener from '..'
 
-describe('`useEventListener` hook', () => {
+describe('useEventListener', () => {
   const mouseMoveEvent = { clientX: 100, clientY: 200 }
 
   let mockHandler = null
@@ -22,7 +22,7 @@ describe('`useEventListener` hook', () => {
     }
   }
 
-  test('should call `addEventListener` and `handler`', () => {
+  it('should call `addEventListener` and `handler`', () => {
     const handler = jest.fn()
     const spy = jest.spyOn(mockElement, 'addEventListener')
 
@@ -40,7 +40,7 @@ describe('`useEventListener` hook', () => {
     spy.mockRestore()
   })
 
-  test('should default to `window/global` given no element', () => {
+  it('should default to `window/global` given no element', () => {
     const handler = jest.fn()
     const spy = jest.spyOn(global, 'addEventListener')
 
@@ -55,7 +55,7 @@ describe('`useEventListener` hook', () => {
     spy.mockRestore()
   })
 
-  test('should fail safe given no window (SSR)', () => {
+  it('should fail safe given no window (SSR)', () => {
     const handler = jest.fn()
 
     function Comp () {
