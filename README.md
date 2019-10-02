@@ -27,6 +27,8 @@ A custom Preact Hook that provides a declarative useEventListener.
 
 ## Installation
 
+***This package has [Preact 10+](https://github.com/preactjs/preact) as a peer dependency.***
+
 `npm install @preact-hooks/event --save-dev` or `yarn add @preact-hooks/event -D`
 
 You can also load it via the [unpkg](https://unpkg.com) CDN
