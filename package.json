@@ -65,7 +65,7 @@
     "preact": "^10.0.0-rc.3",
     "rimraf": "^3.0.0",
     "standard": "^14.3.1",
-    "standard-version": "^7.0.0"
+    "standard-version": "^8.0.1"
   },
   "publishConfig": {
     "access": "public"
